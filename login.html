@@ -4,16 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encore | Login</title>
+
+    <link rel="stylesheet" href="input.css">
+    <!-- Tailwind Css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
-<body class="bg-[#0F042E]">
+<body class="font-body">
 
     <!-- Header -->
 
-    <header class="flex items-center justify-between w-full h-auto">
+    <header class="fixed top-0 left-0 p-6 flex items-center justify-between w-full h-auto bg-[#080217]">
         <div></div>
+
+        <!-- Logo -->
+        <div>
+            <h2 class="font-semi text-xl">ENCORE</h2>
+        </div>
+
+
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-8 h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5h16.5M8.25 12h7.5M11.25 16.5h2.25" />
+            </svg>    
+        </div>
     </header>
+
+
+    <!-- Login Section -->
+
+    <div class="mt-48 max-w-lg p-6 mx-auto items-center">
+        <h1 class="text-3xl text-center font-semibold mb-4">Login or <br>Signup</h1>
+
+        <p class="text-center pb-5">Enter the code you received at <br> 555-555-1212</p>
+
+
+        <form>
+          <div class="mb-4">
+
+            <input type="text" id="username" name="username" placeholder="Phone or Email" class="mt-2 p-3 text-center text-sm bg-[#2D293A] w-full rounded-xl">
+          </div>
+        
+          <button type="submit" class="w-full bg-[#433F4E] text-black text-sm p-3 mt-2 focus:outline-none  rounded-xl">Login</button>
+        </form>
+      </div>
     
 </body>
 </html>
